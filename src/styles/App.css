@@ -1,0 +1,14 @@
+.bigHeader {
+  text-align: center;
+}
+.content {
+  display: flex;
+}
+label {
+  margin-right: 10%;
+}
+fieldset {
+  width: 50%;
+  border: #213547 solid 0.2em;
+  border-radius: 1%;
+}
