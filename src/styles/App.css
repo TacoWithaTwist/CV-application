@@ -1,14 +1,35 @@
+#root {
+  height: 100vh;
+}
 .bigHeader {
   text-align: center;
 }
 .content {
   display: flex;
+  gap: 3%;
 }
 label {
   margin-right: 10%;
 }
+.preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cvContainer {
+  border: #213547 solid 1px;
+  width: 100%;
+  height: 100%;
+}
+.cvContainer > h3 {
+  text-align: center;
+}
+.horLine {
+  border: solid #213547 1px;
+}
 fieldset {
-  width: 50%;
+  width: 40%;
   border: #213547 solid 0.2em;
   border-radius: 1%;
 }
