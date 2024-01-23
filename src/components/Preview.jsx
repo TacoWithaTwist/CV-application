@@ -5,14 +5,14 @@ function Preview(props) {
     <>
       <header>
         <h1>{props.fullname}</h1>
-        {/* <p>{props.job}</p> */}
+        <p>{props.job}</p>
       </header>
 
       <section className="section">
         <h2>Contact Information</h2>
         <p>Email: {props.email}</p>
         <p>Phone: {props.phone}</p>
-        {/* <p>LinkedIn: {props.linkedIn}</p> */}
+        <p>LinkedIn: {props.linkedIn}</p>
         <p>GitHub: {props.github}</p>
       </section>
 
@@ -64,5 +64,7 @@ Preview.propTypes = {
   email: Proptypes.string,
   phone: Proptypes.string,
   github: Proptypes.string,
+  job: Proptypes.string,
+  linkedIn: Proptypes.string,
 };
 export default Preview;
