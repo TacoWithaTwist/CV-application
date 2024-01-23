@@ -1,6 +1,12 @@
 #root {
   height: 100vh;
 }
+Preview {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 20px;
+}
 .bigHeader {
   text-align: center;
 }
@@ -18,6 +24,10 @@ label {
   align-items: center;
 }
 .cvContainer {
+}
+.previewContainer {
+  margin: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border: #213547 solid 1px;
   width: 100%;
   height: 100%;

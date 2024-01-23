@@ -1,5 +1,6 @@
 import '../styles/App.css';
 import { useState } from 'react';
+import Preview from './Preview.jsx';
 function App() {
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');
@@ -116,15 +117,13 @@ function App() {
             <button type="submit">Submit</button>
           </form>
         </fieldset>
-        <div className="preview">
-          <div className="cvContainer">
-            <h3>{fullname}</h3>
-            <div className="horLine"></div>
-            <span>{email}</span>
-            <span>{phone}</span>
-            <span>{github}</span>
-            <div></div>
-          </div>
+        <div className="previewContainer">
+          <Preview
+            fullname={fullname}
+            email={email}
+            phone={phone}
+            github={github}
+          />
         </div>
       </div>
     </>
