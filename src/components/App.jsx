@@ -9,6 +9,8 @@ function App() {
   const [job, setJob] = useState('');
   const [university, setUniversity] = useState('');
   const [linkedIn, setLinkedIn] = useState('');
+  const [degree, setDegree] = useState('');
+  const [gradDate, setGradDate] = useState('14/04/2004');
   function handleFullnameChange(e) {
     setFullname(e.target.value);
   }
@@ -32,6 +34,12 @@ function App() {
   }
   function handleLinkedInChange(e) {
     setLinkedIn(e.target.value);
+  }
+  function handleDegreeChange(e) {
+    setDegree(e.target.value);
+  }
+  function handleGradDateChange(e) {
+    setGradDate(e.target.value);
   }
   // function previewImage() {
   //   var preview = document.getElementById('preview');
@@ -101,6 +109,18 @@ function App() {
               </label>
             </div>
             <div>
+              <label htmlFor="LinkedIn">
+                linkedIn:
+                <input
+                  type="text"
+                  name="LinkedIn"
+                  id="LinkedIn"
+                  value={linkedIn}
+                  onChange={handleLinkedInChange}
+                />
+              </label>
+            </div>
+            <div>
               <label htmlFor="Enter your Github Profile Link">
                 *Github:{' '}
                 <input
@@ -137,6 +157,8 @@ function App() {
                   onChange={handleJobChange}
                 />
               </label>
+            </div>
+            <div>
               <label htmlFor="University">
                 University:
                 <input
@@ -147,17 +169,29 @@ function App() {
                   onChange={handleUniversityChange}
                 />
               </label>
-              <label htmlFor="LinkedIn">
-                linkedIn:
+              <label htmlFor="degree">
+                Degree:
                 <input
                   type="text"
-                  name="LinkedIn"
-                  id="LinkedIn"
-                  value={linkedIn}
-                  onChange={handleLinkedInChange}
+                  name="degree"
+                  id="degree"
+                  value={degree}
+                  onChange={handleDegreeChange}
                 />
               </label>
             </div>
+            <div>
+              <label htmlFor="graduation date">
+                <input
+                  type="date"
+                  name="gradDate"
+                  id="gradDate"
+                  value={gradDate}
+                  onChange={handleGradDateChange}
+                />
+              </label>
+            </div>
+
             <button type="submit">Submit</button>
           </form>
         </fieldset>
@@ -168,8 +202,10 @@ function App() {
             phone={phone}
             github={github}
             job={job}
-            university={university}
             linkedIn={linkedIn}
+            university={university}
+            degree={degree}
+            gradDate={gradDate}
           />
         </div>
       </div>

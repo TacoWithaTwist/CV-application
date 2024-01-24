@@ -19,7 +19,7 @@ function Preview(props) {
       <section className="section">
         <h2>Education</h2>
         <p>
-          {/* <strong>{props.university}</strong> - {props.degree}({props.gradDate}) */}
+          <strong>{props.university}</strong> - {props.degree}({props.gradDate})
         </p>
       </section>
 
@@ -66,5 +66,8 @@ Preview.propTypes = {
   github: Proptypes.string,
   job: Proptypes.string,
   linkedIn: Proptypes.string,
+  university: Proptypes.string,
+  degree: Proptypes.string,
+  gradDate: Proptypes.date,
 };
 export default Preview;
